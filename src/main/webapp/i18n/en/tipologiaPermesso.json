@@ -1,0 +1,23 @@
+{
+  "myztl5App": {
+    "tipologiaPermesso": {
+      "home": {
+        "title": "Tipologia Permessos",
+        "createLabel": "Create a new Tipologia Permesso",
+        "createOrEditLabel": "Create or edit a Tipologia Permesso",
+        "notFound": "No Tipologia Permessos found"
+      },
+      "created": "A new Tipologia Permesso is created with identifier {{ param }}",
+      "updated": "A Tipologia Permesso is updated with identifier {{ param }}",
+      "deleted": "A Tipologia Permesso is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tipologia Permesso {{ id }}?"
+      },
+      "detail": {
+        "title": "Tipologia Permesso"
+      },
+      "nome": "Nome",
+      "codice": "Codice"
+    }
+  }
+}

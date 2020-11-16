@@ -1,0 +1,11 @@
+{
+  "myztl5App": {
+    "MinutiEnum": {
+      "null": "",
+      "QUINDICI": "15",
+      "TRENTA": "30",
+      "QUARANTACINQUE": "45",
+      "SESSANTA": "60"
+    }
+  }
+}

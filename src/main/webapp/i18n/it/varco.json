@@ -1,0 +1,25 @@
+{
+  "myztl5App": {
+    "varco": {
+      "home": {
+        "title": "Varcos",
+        "createLabel": "Genera un nuovo Varco",
+        "createOrEditLabel": "Genera o modifica un Varco",
+        "notFound": "No Varcos found"
+      },
+      "created": "&Egrave; stato generato un nuovo Varco con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Varco identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Varco con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Varco {{ id }}?"
+      },
+      "detail": {
+        "title": "Varco"
+      },
+      "codice": "Codice",
+      "descrizionePosizione": "Descrizione Posizione",
+      "stato": "Stato",
+      "gruppoVarchi": "Gruppo Varchi"
+    }
+  }
+}

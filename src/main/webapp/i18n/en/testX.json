@@ -1,0 +1,36 @@
+{
+  "myztl5App": {
+    "testX": {
+      "home": {
+        "title": "Test XES",
+        "createLabel": "Create a new Test X",
+        "createOrEditLabel": "Create or edit a Test X",
+        "notFound": "No Test XES found"
+      },
+      "created": "A new Test X is created with identifier {{ param }}",
+      "updated": "A Test X is updated with identifier {{ param }}",
+      "deleted": "A Test X is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Test X {{ id }}?"
+      },
+      "detail": {
+        "title": "Test X"
+      },
+      "xString": "X String",
+      "xInteger": "X Integer",
+      "xLong": "X Long",
+      "xBigDecimal": "X Big Decimal",
+      "xFloat": "X Float",
+      "xDouble": "X Double",
+      "xBoolean": "X Boolean",
+      "xLocalDate": "X Local Date",
+      "xZonedDateTime": "X Zoned Date Time",
+      "xInstant": "X Instant",
+      "xUUID": "X UUID",
+      "xBlob": "X Blob",
+      "xAnyBlob": "X Any Blob",
+      "xImageBlob": "X Image Blob",
+      "xTextBlob": "X Text Blob"
+    }
+  }
+}

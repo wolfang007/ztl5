@@ -1,0 +1,22 @@
+{
+  "myztl5App": {
+    "festivita": {
+      "home": {
+        "title": "Festivitas",
+        "createLabel": "Genera un nuovo Festivita",
+        "createOrEditLabel": "Genera o modifica un Festivita",
+        "notFound": "No Festivitas found"
+      },
+      "created": "&Egrave; stato generato un nuovo Festivita con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Festivita identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Festivita con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Festivita {{ id }}?"
+      },
+      "detail": {
+        "title": "Festivita"
+      },
+      "nome": "Nome"
+    }
+  }
+}

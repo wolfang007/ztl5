@@ -1,0 +1,25 @@
+{
+  "myztl5App": {
+    "autorizzazione": {
+      "home": {
+        "title": "Autorizzaziones",
+        "createLabel": "Create a new Autorizzazione",
+        "createOrEditLabel": "Create or edit a Autorizzazione",
+        "notFound": "No Autorizzaziones found"
+      },
+      "created": "A new Autorizzazione is created with identifier {{ param }}",
+      "updated": "A Autorizzazione is updated with identifier {{ param }}",
+      "deleted": "A Autorizzazione is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Autorizzazione {{ id }}?"
+      },
+      "detail": {
+        "title": "Autorizzazione"
+      },
+      "nome": "Nome",
+      "descrizione": "Descrizione",
+      "stato": "Stato",
+      "permessoTemporaneo": "Permesso Temporaneo"
+    }
+  }
+}

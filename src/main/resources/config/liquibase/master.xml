@@ -14,7 +14,27 @@
     <property name="uuidType" value="uuid" dbms="h2, postgresql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116185658_added_entity_TipologiaZona.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116185758_added_entity_Varco.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116185858_added_entity_GruppoVarchi.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116185958_added_entity_TipologiaVeicolo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116190058_added_entity_Festivita.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116190158_added_entity_RegolaOraria.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116190258_added_entity_ProfiloOrario.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116190358_added_entity_Autorizzazione.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116190458_added_entity_Zona.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116190558_added_entity_TipologiaPermesso.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116190658_added_entity_DurataCosto.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116190758_added_entity_Motivazione.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116190858_added_entity_Calendarizzazione.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116190958_added_entity_TestX.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116191058_added_entity_PermessoTemporaneo.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20201116185858_added_entity_constraints_GruppoVarchi.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116190158_added_entity_constraints_RegolaOraria.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116190258_added_entity_constraints_ProfiloOrario.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116190458_added_entity_constraints_Zona.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201116191058_added_entity_constraints_PermessoTemporaneo.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

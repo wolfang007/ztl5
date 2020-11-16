@@ -1,0 +1,24 @@
+{
+  "myztl5App": {
+    "durataCosto": {
+      "home": {
+        "title": "Durata Costos",
+        "createLabel": "Create a new Durata Costo",
+        "createOrEditLabel": "Create or edit a Durata Costo",
+        "notFound": "No Durata Costos found"
+      },
+      "created": "A new Durata Costo is created with identifier {{ param }}",
+      "updated": "A Durata Costo is updated with identifier {{ param }}",
+      "deleted": "A Durata Costo is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Durata Costo {{ id }}?"
+      },
+      "detail": {
+        "title": "Durata Costo"
+      },
+      "durata": "Durata",
+      "descrizione": "Descrizione",
+      "costo": "Costo"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="regolaOraria">
+            <h2><span jhiTranslate="myztl5App.regolaOraria.detail.title">Regola Oraria</span> {{ regolaOraria.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="myztl5App.regolaOraria.nome">Nome</span></dt>
+                <dd>
+                    <span>{{ regolaOraria.nome }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.oraInizio">Ora Inizio</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'myztl5App.OreEnum.' + regolaOraria.oraInizio }}">{{ regolaOraria.oraInizio }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.oraFine">Ora Fine</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'myztl5App.OreEnum.' + regolaOraria.oraFine }}">{{ regolaOraria.oraFine }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.minutiInizio">Minuti Inizio</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'myztl5App.MinutiEnum.' + regolaOraria.minutiInizio }}">{{ regolaOraria.minutiInizio }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.minutiFine">Minuti Fine</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'myztl5App.MinutiEnum.' + regolaOraria.minutiFine }}">{{ regolaOraria.minutiFine }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.lunedi">Lunedi</span></dt>
+                <dd>
+                    <span>{{ regolaOraria.lunedi }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.martedi">Martedi</span></dt>
+                <dd>
+                    <span>{{ regolaOraria.martedi }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.mercoledi">Mercoledi</span></dt>
+                <dd>
+                    <span>{{ regolaOraria.mercoledi }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.giovedi">Giovedi</span></dt>
+                <dd>
+                    <span>{{ regolaOraria.giovedi }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.venerdi">Venerdi</span></dt>
+                <dd>
+                    <span>{{ regolaOraria.venerdi }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.sabato">Sabato</span></dt>
+                <dd>
+                    <span>{{ regolaOraria.sabato }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.domenica">Domenica</span></dt>
+                <dd>
+                    <span>{{ regolaOraria.domenica }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.festivi">Festivi</span></dt>
+                <dd>
+                    <span>{{ regolaOraria.festivi }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.stato">Stato</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'myztl5App.EntityStatus.' + regolaOraria.stato }}">{{ regolaOraria.stato }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.regolaOraria.tipologiaVeicolo">Tipologia Veicolo</span></dt>
+                <dd>
+                    <span *ngFor="let tipologiaVeicolo of regolaOraria.tipologiaVeicolos; let last = last">
+                        <a [routerLink]="['/tipologia-veicolo', tipologiaVeicolo?.id, 'view']">{{ tipologiaVeicolo.nome }}</a>{{ last ? '' : ', ' }}
+                    </span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/regola-oraria', regolaOraria.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

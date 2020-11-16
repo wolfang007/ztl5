@@ -1,0 +1,26 @@
+{
+  "myztl5App": {
+    "zona": {
+      "home": {
+        "title": "Zonas",
+        "createLabel": "Create a new Zona",
+        "createOrEditLabel": "Create or edit a Zona",
+        "notFound": "No Zonas found"
+      },
+      "created": "A new Zona is created with identifier {{ param }}",
+      "updated": "A Zona is updated with identifier {{ param }}",
+      "deleted": "A Zona is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Zona {{ id }}?"
+      },
+      "detail": {
+        "title": "Zona"
+      },
+      "nome": "Nome",
+      "stato": "Stato",
+      "profiloOrario": "Profilo Orario",
+      "tipologiaZona": "Tipologia Zona",
+      "gruppoVarchi": "Gruppo Varchi"
+    }
+  }
+}

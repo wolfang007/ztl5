@@ -1,0 +1,22 @@
+{
+  "myztl5App": {
+    "motivazione": {
+      "home": {
+        "title": "Motivaziones",
+        "createLabel": "Create a new Motivazione",
+        "createOrEditLabel": "Create or edit a Motivazione",
+        "notFound": "No Motivaziones found"
+      },
+      "created": "A new Motivazione is created with identifier {{ param }}",
+      "updated": "A Motivazione is updated with identifier {{ param }}",
+      "deleted": "A Motivazione is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Motivazione {{ id }}?"
+      },
+      "detail": {
+        "title": "Motivazione"
+      },
+      "descrizione": "Descrizione"
+    }
+  }
+}

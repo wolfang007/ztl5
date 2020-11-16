@@ -1,0 +1,97 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="testX">
+            <h2><span jhiTranslate="myztl5App.testX.detail.title">Test X</span> {{ testX.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="myztl5App.testX.xString">X String</span></dt>
+                <dd>
+                    <span>{{ testX.xString }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xInteger">X Integer</span></dt>
+                <dd>
+                    <span>{{ testX.xInteger }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xLong">X Long</span></dt>
+                <dd>
+                    <span>{{ testX.xLong }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xBigDecimal">X Big Decimal</span></dt>
+                <dd>
+                    <span>{{ testX.xBigDecimal }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xFloat">X Float</span></dt>
+                <dd>
+                    <span>{{ testX.xFloat }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xDouble">X Double</span></dt>
+                <dd>
+                    <span>{{ testX.xDouble }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xBoolean">X Boolean</span></dt>
+                <dd>
+                    <span>{{ testX.xBoolean }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xLocalDate">X Local Date</span></dt>
+                <dd>
+                    <span>{{ testX.xLocalDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xZonedDateTime">X Zoned Date Time</span></dt>
+                <dd>
+                    <span>{{ testX.xZonedDateTime }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xInstant">X Instant</span></dt>
+                <dd>
+                    <span>{{ testX.xInstant }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xUUID">X UUID</span></dt>
+                <dd>
+                    <span>{{ testX.xUUID }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xBlob">X Blob</span></dt>
+                <dd>
+                    <div *ngIf="testX.xBlob">
+                        <a (click)="openFile(testX.xBlobContentType, testX.xBlob)" jhiTranslate="entity.action.open">open</a>
+                        {{ testX.xBlobContentType }}, {{ byteSize(testX.xBlob) }}
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xAnyBlob">X Any Blob</span></dt>
+                <dd>
+                    <div *ngIf="testX.xAnyBlob">
+                        <a (click)="openFile(testX.xAnyBlobContentType, testX.xAnyBlob)" jhiTranslate="entity.action.open">open</a>
+                        {{ testX.xAnyBlobContentType }}, {{ byteSize(testX.xAnyBlob) }}
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xImageBlob">X Image Blob</span></dt>
+                <dd>
+                    <div *ngIf="testX.xImageBlob">
+                        <a (click)="openFile(testX.xImageBlobContentType, testX.xImageBlob)">
+                            <img [src]="'data:' + testX.xImageBlobContentType + ';base64,' + testX.xImageBlob" style="max-width: 100%;" alt="testX image"/>
+                        </a>
+                        {{ testX.xImageBlobContentType }}, {{ byteSize(testX.xImageBlob) }}
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.testX.xTextBlob">X Text Blob</span></dt>
+                <dd>
+                    <span>{{ testX.xTextBlob }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/test-x', testX.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

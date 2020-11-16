@@ -1,0 +1,27 @@
+{
+  "myztl5App": {
+    "gruppoVarchi": {
+      "home": {
+        "title": "GruppoVarchis",
+        "createLabel": "Genera un nuovo Gruppo Varchi",
+        "createOrEditLabel": "Genera o modifica un Gruppo Varchi",
+        "notFound": "No Gruppo Varchis found"
+      },
+      "created": "&Egrave; stato generato un nuovo Gruppo Varchi con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Gruppo Varchi identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Gruppo Varchi con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Gruppo Varchi {{ id }}?"
+      },
+      "detail": {
+        "title": "Gruppo Varchi"
+      },
+      "nome": "Nome",
+      "descrizione": "Descrizione",
+      "descrioneIntervalli": "Descrione Intervalli",
+      "stato": "Stato",
+      "posizione": "Posizione",
+      "zona": "Zona"
+    }
+  }
+}

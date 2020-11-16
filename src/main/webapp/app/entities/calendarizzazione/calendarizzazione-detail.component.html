@@ -1,0 +1,62 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="calendarizzazione">
+            <h2><span jhiTranslate="myztl5App.calendarizzazione.detail.title">Calendarizzazione</span> {{ calendarizzazione.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="myztl5App.calendarizzazione.lunedi">Lunedi</span></dt>
+                <dd>
+                    <span>{{ calendarizzazione.lunedi }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.calendarizzazione.martedi">Martedi</span></dt>
+                <dd>
+                    <span>{{ calendarizzazione.martedi }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.calendarizzazione.mercoledi">Mercoledi</span></dt>
+                <dd>
+                    <span>{{ calendarizzazione.mercoledi }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.calendarizzazione.giovedi">Giovedi</span></dt>
+                <dd>
+                    <span>{{ calendarizzazione.giovedi }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.calendarizzazione.venerdi">Venerdi</span></dt>
+                <dd>
+                    <span>{{ calendarizzazione.venerdi }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.calendarizzazione.sabato">Sabato</span></dt>
+                <dd>
+                    <span>{{ calendarizzazione.sabato }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.calendarizzazione.domenica">Domenica</span></dt>
+                <dd>
+                    <span>{{ calendarizzazione.domenica }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.calendarizzazione.siRipete">Si Ripete</span></dt>
+                <dd>
+                    <span>{{ calendarizzazione.siRipete }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.calendarizzazione.festivi">Festivi</span></dt>
+                <dd>
+                    <span>{{ calendarizzazione.festivi }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/calendarizzazione', calendarizzazione.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

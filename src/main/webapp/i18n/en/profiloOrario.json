@@ -1,0 +1,24 @@
+{
+  "myztl5App": {
+    "profiloOrario": {
+      "home": {
+        "title": "Profilo Orarios",
+        "createLabel": "Create a new Profilo Orario",
+        "createOrEditLabel": "Create or edit a Profilo Orario",
+        "notFound": "No Profilo Orarios found"
+      },
+      "created": "A new Profilo Orario is created with identifier {{ param }}",
+      "updated": "A Profilo Orario is updated with identifier {{ param }}",
+      "deleted": "A Profilo Orario is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Profilo Orario {{ id }}?"
+      },
+      "detail": {
+        "title": "Profilo Orario"
+      },
+      "nome": "Nome",
+      "stato": "Stato",
+      "regolaOraria": "Regola Oraria"
+    }
+  }
+}

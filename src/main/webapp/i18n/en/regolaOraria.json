@@ -1,0 +1,37 @@
+{
+  "myztl5App": {
+    "regolaOraria": {
+      "home": {
+        "title": "Regola Orarias",
+        "createLabel": "Create a new Regola Oraria",
+        "createOrEditLabel": "Create or edit a Regola Oraria",
+        "notFound": "No Regola Orarias found"
+      },
+      "created": "A new Regola Oraria is created with identifier {{ param }}",
+      "updated": "A Regola Oraria is updated with identifier {{ param }}",
+      "deleted": "A Regola Oraria is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Regola Oraria {{ id }}?"
+      },
+      "detail": {
+        "title": "Regola Oraria"
+      },
+      "nome": "Nome",
+      "oraInizio": "Ora Inizio",
+      "oraFine": "Ora Fine",
+      "minutiInizio": "Minuti Inizio",
+      "minutiFine": "Minuti Fine",
+      "lunedi": "Lunedi",
+      "martedi": "Martedi",
+      "mercoledi": "Mercoledi",
+      "giovedi": "Giovedi",
+      "venerdi": "Venerdi",
+      "sabato": "Sabato",
+      "domenica": "Domenica",
+      "festivi": "Festivi",
+      "stato": "Stato",
+      "tipologiaVeicolo": "Tipologia Veicolo",
+      "profiloOrario": "Profilo Orario"
+    }
+  }
+}

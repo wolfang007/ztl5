@@ -1,0 +1,9 @@
+{
+  "myztl5App": {
+    "EntityStatus": {
+      "null": "",
+      "ATTIVO": "ATTIVO",
+      "DISATTIVO": "DISATTIVO"
+    }
+  }
+}

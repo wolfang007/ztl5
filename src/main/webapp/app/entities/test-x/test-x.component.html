@@ -1,0 +1,100 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="myztl5App.testX.home.title">Test XES</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-test-x" [routerLink]="['/test-x/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="myztl5App.testX.home.createLabel">
+            Create a new Test X
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="testXES?.length === 0">
+        <span jhiTranslate="myztl5App.testX.home.notFound">No testXES found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="testXES && testXES.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xString">X String</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xInteger">X Integer</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xLong">X Long</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xBigDecimal">X Big Decimal</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xFloat">X Float</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xDouble">X Double</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xBoolean">X Boolean</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xLocalDate">X Local Date</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xZonedDateTime">X Zoned Date Time</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xInstant">X Instant</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xUUID">X UUID</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xBlob">X Blob</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xAnyBlob">X Any Blob</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xImageBlob">X Image Blob</span></th>
+                    <th scope="col" ><span jhiTranslate="myztl5App.testX.xTextBlob">X Text Blob</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let testX of testXES ;trackBy: trackId">
+                    <td><a [routerLink]="['/test-x', testX.id, 'view']">{{ testX.id }}</a></td>
+                    <td>{{ testX.xString }}</td>
+                    <td>{{ testX.xInteger }}</td>
+                    <td>{{ testX.xLong }}</td>
+                    <td>{{ testX.xBigDecimal }}</td>
+                    <td>{{ testX.xFloat }}</td>
+                    <td>{{ testX.xDouble }}</td>
+                    <td>{{ testX.xBoolean }}</td>
+                    <td>{{ testX.xLocalDate | date:'mediumDate' }}</td>
+                    <td>{{ testX.xZonedDateTime | date:'medium' }}</td>
+                    <td>{{ testX.xInstant | date:'medium' }}</td>
+                    <td>{{ testX.xUUID }}</td>
+                    <td>
+                        <a *ngIf="testX.xBlob" (click)="openFile(testX.xBlobContentType, testX.xBlob)" jhiTranslate="entity.action.open">open</a>
+                        <span *ngIf="testX.xBlob">{{ testX.xBlobContentType }}, {{ byteSize(testX.xBlob) }}</span>
+                    </td>
+                    <td>
+                        <a *ngIf="testX.xAnyBlob" (click)="openFile(testX.xAnyBlobContentType, testX.xAnyBlob)" jhiTranslate="entity.action.open">open</a>
+                        <span *ngIf="testX.xAnyBlob">{{ testX.xAnyBlobContentType }}, {{ byteSize(testX.xAnyBlob) }}</span>
+                    </td>
+                    <td>
+                        <a *ngIf="testX.xImageBlob" (click)="openFile(testX.xImageBlobContentType, testX.xImageBlob)">
+                            <img [src]="'data:' + testX.xImageBlobContentType + ';base64,' + testX.xImageBlob" style="max-height: 30px;" alt="testX image"/>
+                        </a>
+                        <span *ngIf="testX.xImageBlob">{{ testX.xImageBlobContentType }}, {{ byteSize(testX.xImageBlob) }}</span>
+                    </td>
+                    <td>{{ testX.xTextBlob }}</td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/test-x', testX.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/test-x', testX.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(testX)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

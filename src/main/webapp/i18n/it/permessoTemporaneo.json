@@ -1,0 +1,42 @@
+{
+  "myztl5App": {
+    "permessoTemporaneo": {
+      "home": {
+        "title": "Lista Permessi Temporanei",
+        "createLabel": "Genera un nuovo Permesso Temporaneo",
+        "createOrEditLabel": "Genera o modifica un Permesso Temporaneo",
+        "notFound": "No Permesso Temporaneos found"
+      },
+      "created": "&Egrave; stato generato un nuovo Permesso Temporaneo con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Permesso Temporaneo identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Permesso Temporaneo con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Permesso Temporaneo {{ id }}?"
+      },
+      "detail": {
+        "title": "Permesso Temporaneo"
+      },
+      "targa": "Targa",
+      "domicilioDigitale": "Domicilio Digitale",
+      "tipoPersona": "Tipo Persona",
+      "nomeRichiedente": "Nome",
+      "cognomeRichiedente": "Cognome ",
+      "ragioneSociale": "Ragione Sociale",
+      "codiceFiscaleRichiedente": "Codice Fiscale",
+      "partitaIva": "Partita Iva",
+      "dataInizio": "Data Inizio",
+      "impostaDiBollo": "Imposta Di Bollo",
+      "costo": "Costo",
+      "copiaFirmata": "Copia Firmata",
+      "documentoRiconoscimento": "Documento Riconoscimento",
+      "pagato": "Pagato",
+      "protocollo": "Protocollo",
+      "calendario": "Calendario",
+      "tipoPermesso": "Tipo Permesso",
+      "durata": "Durata",
+      "nome": "Nome",
+      "motivazione": "Motivazione",
+      "autorizzazioni": "Autorizzazioni"
+    }
+  }
+}

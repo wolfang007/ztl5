@@ -1,0 +1,9 @@
+{
+  "myztl5App": {
+    "TipoPersona": {
+      "null": "",
+      "FISICA": "FISICA",
+      "GIURIDICA": "GIURIDICA"
+    }
+  }
+}

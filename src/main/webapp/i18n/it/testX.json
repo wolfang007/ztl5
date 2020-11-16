@@ -1,0 +1,36 @@
+{
+  "myztl5App": {
+    "testX": {
+      "home": {
+        "title": "TestXES",
+        "createLabel": "Genera un nuovo Test X",
+        "createOrEditLabel": "Genera o modifica un Test X",
+        "notFound": "No Test XES found"
+      },
+      "created": "&Egrave; stato generato un nuovo Test X con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Test X identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Test X con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Test X {{ id }}?"
+      },
+      "detail": {
+        "title": "Test X"
+      },
+      "xString": "X String",
+      "xInteger": "X Integer",
+      "xLong": "X Long",
+      "xBigDecimal": "X Big Decimal",
+      "xFloat": "X Float",
+      "xDouble": "X Double",
+      "xBoolean": "X Boolean",
+      "xLocalDate": "X Local Date",
+      "xZonedDateTime": "X Zoned Date Time",
+      "xInstant": "X Instant",
+      "xUUID": "X UUID",
+      "xBlob": "X Blob",
+      "xAnyBlob": "X Any Blob",
+      "xImageBlob": "X Image Blob",
+      "xTextBlob": "X Text Blob"
+    }
+  }
+}

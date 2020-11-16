@@ -1,0 +1,30 @@
+{
+  "myztl5App": {
+    "calendarizzazione": {
+      "home": {
+        "title": "Calendarizzaziones",
+        "createLabel": "Create a new Calendarizzazione",
+        "createOrEditLabel": "Create or edit a Calendarizzazione",
+        "notFound": "No Calendarizzaziones found"
+      },
+      "created": "A new Calendarizzazione is created with identifier {{ param }}",
+      "updated": "A Calendarizzazione is updated with identifier {{ param }}",
+      "deleted": "A Calendarizzazione is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Calendarizzazione {{ id }}?"
+      },
+      "detail": {
+        "title": "Calendarizzazione"
+      },
+      "lunedi": "Lunedi",
+      "martedi": "Martedi",
+      "mercoledi": "Mercoledi",
+      "giovedi": "Giovedi",
+      "venerdi": "Venerdi",
+      "sabato": "Sabato",
+      "domenica": "Domenica",
+      "siRipete": "Si Ripete",
+      "festivi": "Festivi"
+    }
+  }
+}

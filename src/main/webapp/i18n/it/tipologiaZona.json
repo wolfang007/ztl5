@@ -1,0 +1,24 @@
+{
+  "myztl5App": {
+    "tipologiaZona": {
+      "home": {
+        "title": "TipologiaZonas",
+        "createLabel": "Genera un nuovo Tipologia Zona",
+        "createOrEditLabel": "Genera o modifica un Tipologia Zona",
+        "notFound": "No Tipologia Zonas found"
+      },
+      "created": "&Egrave; stato generato un nuovo Tipologia Zona con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Tipologia Zona identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Tipologia Zona con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Tipologia Zona {{ id }}?"
+      },
+      "detail": {
+        "title": "Tipologia Zona"
+      },
+      "nome": "Nome",
+      "regoleCircolazione": "Regole Circolazione",
+      "stato": "Stato"
+    }
+  }
+}

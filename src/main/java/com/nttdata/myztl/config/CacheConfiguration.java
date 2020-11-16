@@ -47,6 +47,31 @@ public class CacheConfiguration {
             createCache(cm, com.nttdata.myztl.domain.User.class.getName());
             createCache(cm, com.nttdata.myztl.domain.Authority.class.getName());
             createCache(cm, com.nttdata.myztl.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.nttdata.myztl.domain.TipologiaZona.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.Varco.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.Varco.class.getName() + ".gruppoVarchis");
+            createCache(cm, com.nttdata.myztl.domain.GruppoVarchi.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.GruppoVarchi.class.getName() + ".posiziones");
+            createCache(cm, com.nttdata.myztl.domain.GruppoVarchi.class.getName() + ".zonas");
+            createCache(cm, com.nttdata.myztl.domain.TipologiaVeicolo.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.TipologiaVeicolo.class.getName() + ".regolaOrarias");
+            createCache(cm, com.nttdata.myztl.domain.Festivita.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.RegolaOraria.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.RegolaOraria.class.getName() + ".tipologiaVeicolos");
+            createCache(cm, com.nttdata.myztl.domain.RegolaOraria.class.getName() + ".profiloOrarios");
+            createCache(cm, com.nttdata.myztl.domain.ProfiloOrario.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.ProfiloOrario.class.getName() + ".regolaOrarias");
+            createCache(cm, com.nttdata.myztl.domain.Autorizzazione.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.Autorizzazione.class.getName() + ".permessoTemporaneos");
+            createCache(cm, com.nttdata.myztl.domain.Zona.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.Zona.class.getName() + ".gruppoVarchis");
+            createCache(cm, com.nttdata.myztl.domain.TipologiaPermesso.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.DurataCosto.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.Motivazione.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.Calendarizzazione.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.TestX.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.PermessoTemporaneo.class.getName());
+            createCache(cm, com.nttdata.myztl.domain.PermessoTemporaneo.class.getName() + ".autorizzazionis");
             // jhipster-needle-ehcache-add-entry
         };
     }

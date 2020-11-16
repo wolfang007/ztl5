@@ -1,0 +1,22 @@
+{
+  "myztl5App": {
+    "festivita": {
+      "home": {
+        "title": "Festivitas",
+        "createLabel": "Create a new Festivita",
+        "createOrEditLabel": "Create or edit a Festivita",
+        "notFound": "No Festivitas found"
+      },
+      "created": "A new Festivita is created with identifier {{ param }}",
+      "updated": "A Festivita is updated with identifier {{ param }}",
+      "deleted": "A Festivita is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Festivita {{ id }}?"
+      },
+      "detail": {
+        "title": "Festivita"
+      },
+      "nome": "Nome"
+    }
+  }
+}

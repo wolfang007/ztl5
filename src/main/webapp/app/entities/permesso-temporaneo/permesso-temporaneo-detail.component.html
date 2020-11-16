@@ -1,0 +1,128 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="permessoTemporaneo">
+            <h2><span jhiTranslate="myztl5App.permessoTemporaneo.detail.title">Permesso Temporaneo</span> {{ permessoTemporaneo.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.targa">Targa</span></dt>
+                <dd>
+                    <span>{{ permessoTemporaneo.targa }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.domicilioDigitale">Domicilio Digitale</span></dt>
+                <dd>
+                    <span>{{ permessoTemporaneo.domicilioDigitale }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.tipoPersona">Tipo Persona</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'myztl5App.TipoPersona.' + permessoTemporaneo.tipoPersona }}">{{ permessoTemporaneo.tipoPersona }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.nomeRichiedente">Nome Richiedente</span></dt>
+                <dd>
+                    <span>{{ permessoTemporaneo.nomeRichiedente }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.cognomeRichiedente">Cognome Richiedente</span></dt>
+                <dd>
+                    <span>{{ permessoTemporaneo.cognomeRichiedente }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.ragioneSociale">Ragione Sociale</span></dt>
+                <dd>
+                    <span>{{ permessoTemporaneo.ragioneSociale }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.codiceFiscaleRichiedente">Codice Fiscale Richiedente</span></dt>
+                <dd>
+                    <span>{{ permessoTemporaneo.codiceFiscaleRichiedente }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.partitaIva">Partita Iva</span></dt>
+                <dd>
+                    <span>{{ permessoTemporaneo.partitaIva }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.dataInizio">Data Inizio</span></dt>
+                <dd>
+                    <span>{{ permessoTemporaneo.dataInizio }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.impostaDiBollo">Imposta Di Bollo</span></dt>
+                <dd>
+                    <span>{{ permessoTemporaneo.impostaDiBollo }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.costo">Costo</span></dt>
+                <dd>
+                    <span>{{ permessoTemporaneo.costo }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.copiaFirmata">Copia Firmata</span></dt>
+                <dd>
+                    <div *ngIf="permessoTemporaneo.copiaFirmata">
+                        <a (click)="openFile(permessoTemporaneo.copiaFirmataContentType, permessoTemporaneo.copiaFirmata)" jhiTranslate="entity.action.open">open</a>
+                        {{ permessoTemporaneo.copiaFirmataContentType }}, {{ byteSize(permessoTemporaneo.copiaFirmata) }}
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.documentoRiconoscimento">Documento Riconoscimento</span></dt>
+                <dd>
+                    <div *ngIf="permessoTemporaneo.documentoRiconoscimento">
+                        <a (click)="openFile(permessoTemporaneo.documentoRiconoscimentoContentType, permessoTemporaneo.documentoRiconoscimento)" jhiTranslate="entity.action.open">open</a>
+                        {{ permessoTemporaneo.documentoRiconoscimentoContentType }}, {{ byteSize(permessoTemporaneo.documentoRiconoscimento) }}
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.pagato">Pagato</span></dt>
+                <dd>
+                    <span>{{ permessoTemporaneo.pagato }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.protocollo">Protocollo</span></dt>
+                <dd>
+                    <span>{{ permessoTemporaneo.protocollo }}</span>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.calendario">Calendario</span></dt>
+                <dd>
+                    <div *ngIf="permessoTemporaneo.calendario">
+                        <a [routerLink]="['/calendarizzazione', permessoTemporaneo.calendario?.id, 'view']">{{ permessoTemporaneo.calendario?.id }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.tipoPermesso">Tipo Permesso</span></dt>
+                <dd>
+                    <div *ngIf="permessoTemporaneo.tipoPermesso">
+                        <a [routerLink]="['/tipologia-permesso', permessoTemporaneo.tipoPermesso?.id, 'view']">{{ permessoTemporaneo.tipoPermesso?.nome }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.durata">Durata</span></dt>
+                <dd>
+                    <div *ngIf="permessoTemporaneo.durata">
+                        <a [routerLink]="['/durata-costo', permessoTemporaneo.durata?.id, 'view']">{{ permessoTemporaneo.durata?.durata }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.nome">Nome</span></dt>
+                <dd>
+                    <div *ngIf="permessoTemporaneo.nome">
+                        <a [routerLink]="['/zona', permessoTemporaneo.nome?.id, 'view']">{{ permessoTemporaneo.nome?.nome }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.motivazione">Motivazione</span></dt>
+                <dd>
+                    <div *ngIf="permessoTemporaneo.motivazione">
+                        <a [routerLink]="['/motivazione', permessoTemporaneo.motivazione?.id, 'view']">{{ permessoTemporaneo.motivazione?.descrizione }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="myztl5App.permessoTemporaneo.autorizzazioni">Autorizzazioni</span></dt>
+                <dd>
+                    <span *ngFor="let autorizzazioni of permessoTemporaneo.autorizzazionis; let last = last">
+                        <a [routerLink]="['/autorizzazione', autorizzazioni?.id, 'view']">{{ autorizzazioni.nome }}</a>{{ last ? '' : ', ' }}
+                    </span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/permesso-temporaneo', permessoTemporaneo.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

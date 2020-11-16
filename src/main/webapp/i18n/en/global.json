@@ -7,6 +7,21 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "tipologiaZona": "Tipologia Zona",
+        "varco": "Varco",
+        "gruppoVarchi": "Gruppo Varchi",
+        "tipologiaVeicolo": "Tipologia Veicolo",
+        "festivita": "Festivita",
+        "regolaOraria": "Regola Oraria",
+        "profiloOrario": "Profilo Orario",
+        "autorizzazione": "Autorizzazione",
+        "zona": "Zona",
+        "tipologiaPermesso": "Tipologia Permesso",
+        "durataCosto": "Durata Costo",
+        "motivazione": "Motivazione",
+        "calendarizzazione": "Calendarizzazione",
+        "testX": "Test X",
+        "permessoTemporaneo": "Permesso Temporaneo",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
